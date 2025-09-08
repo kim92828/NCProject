@@ -18,6 +18,7 @@ public class CloudController {
 	
 	@GetMapping("/")
 	public String goIndex(Model model) {
+		
 		List<Cloudtest> list = repo.findAll();
 		model.addAttribute("list", list);
 		System.out.println(list.size());

@@ -12,7 +12,7 @@ public interface CloudtestRepository extends JpaRepository<Cloudtest, Long> {
 // !!!특이 케이스임!!!
 // 메소드명을 기준으로 sql구문을 생성
 // java 기본적으로 이름을 지어줄 때, 카멜식 기법을 따름
-Cloudtest findByIdAndName(Long id, String name);
+//Cloudtest findByIdAndName(Long id, String name);
 // select * from cloudtest where id =? and name = ?
 
 }
